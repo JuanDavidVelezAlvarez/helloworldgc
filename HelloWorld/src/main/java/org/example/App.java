@@ -15,7 +15,7 @@ public class App implements HttpFunction {
     @Override
     public void service(HttpRequest request, HttpResponse response) throws Exception {
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(response.getOutputStream(), StandardCharsets.UTF_8));
-        writer.write("Hello, World!");
+        writer.write("Hello, World other version!");
         writer.flush();
     }
 }
